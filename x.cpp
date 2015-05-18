@@ -28,7 +28,7 @@ int main(){
 			while(nc--){
 				int f;
 				cin>>f;
-				graph[x].push_back(f);
+				graph[c].push_back(f);
 			}
 		}
 
@@ -41,7 +41,7 @@ int main(){
 
 		vector<bool> visit(graph.size(),false);
 
-		while(!flag&&!cur.empty()){
+		while(!cur.empty()){
 			while(!cur.empty()){
 				int node = cur.front();
 				cur.pop();
@@ -54,6 +54,7 @@ int main(){
 						next.push(f);
 					}
 				}
+				if(flag) break;
 				visit[node] = true;
 			}
 			if(flag) break;
