@@ -77,7 +77,7 @@ void dfs(int x, int y,int pre, bool &result){
 		int ny = y+dy[di];
 		if(check(nx,ny)==1){
 			//cout<<nx<<" " <<ny<<endl;
-			dfs(nx,ny,di,result);
+			dfs(nx,ny,di,result);//try to turn left, if not, continue the previous direction, otherwise turn right
 			break;
 		}
 	}
