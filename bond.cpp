@@ -1,3 +1,4 @@
+//similar to buy and build
 #include<queue>
 #include<stdio.h>
 #include<algorithm>
